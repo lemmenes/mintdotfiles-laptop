@@ -149,6 +149,7 @@ mode "resize" {
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -174,6 +175,7 @@ bar {
 
 exec_always feh --bg-fill /home/adam/Firefox_wallpaper.png
 exec --no-startup-id nm-applet
+exec --no-startup-id redshift -l 33.8317:-118.2817 -t 5500:3500
 
 assign [class="factorio"] 10
 for_window [class="Yad"] floating enable
