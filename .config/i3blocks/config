@@ -50,6 +50,11 @@ instance=Master
 interval=1
 signal=10
 
+[brightness]
+label=
+interval=1
+#signal=9
+
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
