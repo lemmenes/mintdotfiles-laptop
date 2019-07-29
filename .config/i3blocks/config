@@ -37,15 +37,6 @@ instance=spotify
 interval=5
 signal=10
 
-[calendar]
-#command=$SCRIPT_DIR/calendar
-interval=1
-#label= 
-#DATEFMT=+%H:%M:%S
-# SHORTFMT=+%H:%M:%S
-#HEIGHT=180
-#WIDTH=220
-
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
@@ -164,6 +155,20 @@ signal=10
 #command=date '+%Y-%m-%d %H:%M:%S'
 #interval=1
 
+[wifi]
+instance=wlp2s0
+label=
+interval=10
+#separator=false
+
+[calendar]
+#command=$SCRIPT_DIR/calendar
+interval=1
+#label= 
+#DATEFMT=+%H:%M:%S
+# SHORTFMT=+%H:%M:%S
+#HEIGHT=180
+#WIDTH=220
 
 [apt-upgrades]
 #command=$SCRIPT_DIR/apt-upgrades
@@ -175,12 +180,6 @@ interval=once
 #PENDING_COLOR="#00FF00"
 #NONPENDING_COLOR="#FFFFFF"
 command=~/.config/i3blocks/apt-upgrades/apt-upgrades -o -N
-
-[wifi]
-instance=wlp2s0
-label=
-interval=10
-#separator=false
 
 # OpenVPN support
 #
