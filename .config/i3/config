@@ -176,7 +176,18 @@ bindsym XF86Tools exec gnome-terminal -e "nano ~/.config/i3/config"
 # finds out, if available)
 bar {
         status_command i3blocks
-	font pango:monospace 8, FontAwesome 8
+	font pango: Source Code Pro 8, monospace 8, FontAwesome 8
+	colors {
+	    background #000000
+	    statusline #FFFFFF
+	    separator  #666666
+
+	    focused_workspace  #4C7899 #0B65FF #FFFFFF
+	    active_workspace   #333333 #222222 #FFFFFF
+	    inactive_workspace #333333 #222222 #888888
+	    urgent_workspace   #2F343A #900000 #FFFFFF
+	    binding_mode       #2F343A #900000 #FFFFFF
+	}
 }
 
 exec_always feh --bg-fill /home/adam/Firefox_wallpaper.png
@@ -195,7 +206,8 @@ default_border pixel 2
 #default_floating_border none
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused          #0B65FF #285577 #FFFFFF #2E9EF4   #285577
+#client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
